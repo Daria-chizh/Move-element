@@ -24,7 +24,7 @@ function setMissCount(val) {
 }
 
 function onFieldClick(event) {
-  const field = event.target;
+  const field = event.currentTarget;
   if (field === fieldWithGoblin) {
     setHitCount(hitCount + 1);
     targetEl.remove();
@@ -33,7 +33,7 @@ function onFieldClick(event) {
 }
 
 for (const field of possibleParents) {
-  field.onclick = onFieldClick;
+  field.addEventListener('click', onFieldClick);
 }
 
 function moveTargetToNewField() {
@@ -61,4 +61,4 @@ function moveTargetToNewField() {
 
 moveTargetToNewField();
 
-setInterval(moveTargetToNewField, 1000);
+setInterval(moveTargetToNewField, 5000);
