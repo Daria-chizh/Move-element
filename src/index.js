@@ -8,7 +8,7 @@ let missCount = 0;
 let hitCount = 0;
 let fieldWithGoblin = null;
 
-let goblinHasBeenHitPreviousTurn = false;
+let goblinHasBeenHitPreviousTurn = true;
 
 const targetEl = document.createElement('img');
 targetEl.src = Goblin;
