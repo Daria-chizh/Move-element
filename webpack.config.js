@@ -41,8 +41,8 @@ module.exports = (_, argv) => ({
       },
       {
         test: /\.png$/,
-        type: 'asset/inline'
-      }
+        type: 'asset/inline',
+      },
     ],
   },
   plugins: [
