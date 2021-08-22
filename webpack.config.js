@@ -41,6 +41,21 @@ module.exports = (_, argv) => ({
       },
       {
         test: /\.png$/,
+        include: [
+          path.resolve(__dirname, 'css/img')
+        ],
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: false },
+          },
+        ],
+      },
+      {
+        test: /\.png$/,
+        exclude: [
+          path.resolve(__dirname, 'css/img')
+        ],
         use: [
           {
             loader: 'file-loader',

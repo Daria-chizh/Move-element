@@ -11,7 +11,7 @@ export default class GameController {
 
   start() {
     this.field = new GameField({ onHit: () => this.onGoblinHit() });
-    setInterval(() => this.doTurn(), 500);
+    setInterval(() => this.doTurn(), 1000);
   }
 
   onGoblinHit() {
