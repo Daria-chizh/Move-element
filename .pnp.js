@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:7.12.11"],
             ["babel-jest", "virtual:caddf51df4928b33a437ca87b8f5ddfb6205ebd6d8231f74d4ee7223f3866e6f815b221aa1e2bd33e98915f701e95bae72a93d2288b49a34a6246bdbc2a4a132#npm:26.6.3"],
             ["babel-loader", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:8.2.2"],
+            ["copy-webpack-plugin", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:9.0.1"],
             ["core-js", "npm:3.8.3"],
             ["eslint", "npm:7.18.0"],
             ["eslint-config-airbnb-base", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:14.2.1"],
@@ -4541,6 +4542,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["copy-webpack-plugin", [
+        ["npm:9.0.1", {
+          "packageLocation": "./.yarn/cache/copy-webpack-plugin-npm-9.0.1-e94a7db1b5-9c5a4694b0.zip/node_modules/copy-webpack-plugin/",
+          "packageDependencies": [
+            ["copy-webpack-plugin", "npm:9.0.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:9.0.1", {
+          "packageLocation": "./.yarn/$$virtual/copy-webpack-plugin-virtual-f8b774b7c1/0/cache/copy-webpack-plugin-npm-9.0.1-e94a7db1b5-9c5a4694b0.zip/node_modules/copy-webpack-plugin/",
+          "packageDependencies": [
+            ["copy-webpack-plugin", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:9.0.1"],
+            ["@types/webpack", null],
+            ["fast-glob", "npm:3.2.7"],
+            ["glob-parent", "npm:6.0.1"],
+            ["globby", "npm:11.0.4"],
+            ["normalize-path", "npm:3.0.0"],
+            ["p-limit", "npm:3.1.0"],
+            ["schema-utils", "npm:3.0.0"],
+            ["serialize-javascript", "npm:6.0.0"],
+            ["webpack", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:5.18.0"]
+          ],
+          "packagePeers": [
+            "@types/webpack",
+            "webpack"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["core-js", [
         ["npm:3.8.3", {
           "packageLocation": "./.yarn/unplugged/core-js-npm-3.8.3-f6bf459c9f/node_modules/core-js/",
@@ -5859,6 +5889,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picomatch", "npm:2.2.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.2.7", {
+          "packageLocation": "./.yarn/cache/fast-glob-npm-3.2.7-a2f0a45f5b-819aa8f1c0.zip/node_modules/fast-glob/",
+          "packageDependencies": [
+            ["fast-glob", "npm:3.2.7"],
+            ["@nodelib/fs.stat", "npm:2.0.4"],
+            ["@nodelib/fs.walk", "npm:1.2.6"],
+            ["glob-parent", "npm:5.1.2"],
+            ["merge2", "npm:1.4.1"],
+            ["micromatch", "npm:4.0.4"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["fast-json-stable-stringify", [
@@ -6341,6 +6383,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-glob", "npm:4.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:5.1.2", {
+          "packageLocation": "./.yarn/cache/glob-parent-npm-5.1.2-021ab32634-82fcaa4ce1.zip/node_modules/glob-parent/",
+          "packageDependencies": [
+            ["glob-parent", "npm:5.1.2"],
+            ["is-glob", "npm:4.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.0.1", {
+          "packageLocation": "./.yarn/cache/glob-parent-npm-6.0.1-f522c2d082-d59ef1df0b.zip/node_modules/glob-parent/",
+          "packageDependencies": [
+            ["glob-parent", "npm:6.0.1"],
+            ["is-glob", "npm:4.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["glob-to-regexp", [
@@ -6374,6 +6432,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/globby-npm-11.0.2-7ff8329b4b-d23f2a6b88.zip/node_modules/globby/",
           "packageDependencies": [
             ["globby", "npm:11.0.2"],
+            ["array-union", "npm:2.1.0"],
+            ["dir-glob", "npm:3.0.1"],
+            ["fast-glob", "npm:3.2.5"],
+            ["ignore", "npm:5.1.8"],
+            ["merge2", "npm:1.4.1"],
+            ["slash", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:11.0.4", {
+          "packageLocation": "./.yarn/cache/globby-npm-11.0.4-592ce71cca-9f365b35b8.zip/node_modules/globby/",
+          "packageDependencies": [
+            ["globby", "npm:11.0.4"],
             ["array-union", "npm:2.1.0"],
             ["dir-glob", "npm:3.0.1"],
             ["fast-glob", "npm:3.2.5"],
@@ -8450,6 +8521,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picomatch", "npm:2.2.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.0.4", {
+          "packageLocation": "./.yarn/cache/micromatch-npm-4.0.4-9fdcbb7a0e-bc522ad93c.zip/node_modules/micromatch/",
+          "packageDependencies": [
+            ["micromatch", "npm:4.0.4"],
+            ["braces", "npm:3.0.2"],
+            ["picomatch", "npm:2.3.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["mime", [
@@ -8583,6 +8663,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:7.12.11"],
             ["babel-jest", "virtual:caddf51df4928b33a437ca87b8f5ddfb6205ebd6d8231f74d4ee7223f3866e6f815b221aa1e2bd33e98915f701e95bae72a93d2288b49a34a6246bdbc2a4a132#npm:26.6.3"],
             ["babel-loader", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:8.2.2"],
+            ["copy-webpack-plugin", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:9.0.1"],
             ["core-js", "npm:3.8.3"],
             ["eslint", "npm:7.18.0"],
             ["eslint-config-airbnb-base", "virtual:67ad17ea3dd3385273511a2eb48d7ff32f0da947a0832539ae5d6bff1ce6f8c0d87f5c101d6eed0dffd71fcf4e97d047130fa3cfa5edd5a1847de9709249db82#npm:14.2.1"],
@@ -9424,6 +9505,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/picomatch-npm-2.2.2-1ce736a913-20fa75e0a5.zip/node_modules/picomatch/",
           "packageDependencies": [
             ["picomatch", "npm:2.2.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.3.0", {
+          "packageLocation": "./.yarn/cache/picomatch-npm-2.3.0-5e60e6c82d-80113a0fb7.zip/node_modules/picomatch/",
+          "packageDependencies": [
+            ["picomatch", "npm:2.3.0"]
           ],
           "linkType": "HARD",
         }]
@@ -10390,6 +10478,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/serialize-javascript-npm-5.0.1-8ffc173f09-97eef70a33.zip/node_modules/serialize-javascript/",
           "packageDependencies": [
             ["serialize-javascript", "npm:5.0.1"],
+            ["randombytes", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/serialize-javascript-npm-6.0.0-0bb8a3c88d-e086a40bfc.zip/node_modules/serialize-javascript/",
+          "packageDependencies": [
+            ["serialize-javascript", "npm:6.0.0"],
             ["randombytes", "npm:2.1.0"]
           ],
           "linkType": "HARD",
