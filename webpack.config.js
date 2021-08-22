@@ -42,7 +42,7 @@ module.exports = (_, argv) => ({
       {
         test: /\.png$/,
         include: [
-          path.resolve(__dirname, 'css/img')
+          path.resolve(__dirname, 'css/img'),
         ],
         use: [
           {
@@ -54,7 +54,7 @@ module.exports = (_, argv) => ({
       {
         test: /\.png$/,
         exclude: [
-          path.resolve(__dirname, 'css/img')
+          path.resolve(__dirname, 'css/img'),
         ],
         use: [
           {
