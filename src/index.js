@@ -1,4 +1,4 @@
-import GameController from "./GameController";
+import GameController from './GameController';
 
 const game = new GameController();
 game.start();

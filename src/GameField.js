@@ -1,9 +1,9 @@
-import Goblin from "../img/goblin.png";
+import Goblin from '../img/goblin.png';
 
 export default class GameField {
   constructor(listeners) {
     this.onHit = listeners.onHit;
-    this.goblin = this.initGoblin();
+    this.goblin = GameField.initGoblin();
     this.fields = this.initFields();
     // show goblin at the start
     this.moveGoblinToRandomField();
@@ -20,7 +20,7 @@ export default class GameField {
     this.fieldWithGoblin = newParent;
   }
 
-  initGoblin() {
+  static initGoblin() {
     const target = document.createElement('img');
     target.src = Goblin;
     return target;
@@ -30,8 +30,7 @@ export default class GameField {
     const fields = document.querySelectorAll('.field');
 
     for (const field of fields) {
-      field.addEventListener('click', (event) => {
-        const field = event.currentTarget;
+      field.addEventListener('click', () => {
         if (field === this.fieldWithGoblin) {
           this.goblin.remove();
           this.onHit();

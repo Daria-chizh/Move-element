@@ -1,4 +1,4 @@
-import GameField from "./GameField";
+import GameField from './GameField';
 
 export default class GameController {
   constructor() {
@@ -28,7 +28,6 @@ export default class GameController {
     this.misses = val;
     this.missElement.textContent = val;
   }
-
 
   doTurn() {
     if (!this.hasGoblinBeenHitThisTurn) {
